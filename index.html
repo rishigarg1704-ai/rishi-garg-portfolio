@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rishi Garg | Backend Developer &amp; DSA Enthusiast</title>
+<meta name="description" content="Rishi Garg is a Computer Science student and Backend Developer focused on Java, Python, SQL, REST APIs, MySQL and Data Structures & Algorithms.">
+<meta name="keywords" content="Rishi Garg, Backend Developer, Java Developer, DSA, Computer Science Student, Mewar University, REST API, MySQL">
+<meta name="author" content="Rishi Garg">
+<meta name="robots" content="index, follow">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Rishi Garg | Backend Developer & DSA Enthusiast">
+<meta property="og:description" content="Computer Science student specializing in backend development and Data Structures & Algorithms. Java · Python · SQL · REST APIs · MySQL.">
+<meta property="og:type" content="website">
+
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23050505'/%3E%3Ctext x='50' y='64' font-family='monospace' font-weight='700' font-size='40' fill='%2310B981' text-anchor='middle'%3ERG%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Page loader -->
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="loader-mark">
+    <span>R</span><span>G</span>
+  </div>
+  <div class="loader-bar"><span></span></div>
+</div>
+
+<!-- Scroll progress -->
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+<!-- Background layer -->
+<div class="bg-layer" aria-hidden="true">
+  <div class="bg-grid"></div>
+  <div class="bg-glow bg-glow--emerald"></div>
+  <div class="bg-glow bg-glow--cyan"></div>
+  <div class="bg-symbols" id="bgSymbols"></div>
+</div>
+
+<!-- Navbar -->
+<header class="navbar" id="navbar">
+  <nav class="navbar__inner" aria-label="Primary">
+    <a href="#home" class="navbar__logo" aria-label="Rishi Garg, home">
+      <span class="navbar__logo-mark">RG</span>
+    </a>
+
+    <ul class="navbar__links" id="navLinks">
+      <li><a href="#home" class="nav-link" data-nav>Home</a></li>
+      <li><a href="#about" class="nav-link" data-nav>About</a></li>
+      <li><a href="#skills" class="nav-link" data-nav>Skills</a></li>
+      <li><a href="#experience" class="nav-link" data-nav>Experience</a></li>
+      <li><a href="#projects" class="nav-link" data-nav>Projects</a></li>
+      <li><a href="#education" class="nav-link" data-nav>Education</a></li>
+      <li><a href="#achievements" class="nav-link" data-nav>Achievements</a></li>
+      <li><a href="#contact" class="nav-link" data-nav>Contact</a></li>
+    </ul>
+
+    <div class="navbar__actions">
+      <a href="https://github.com/rishigarg1704-ai" target="_blank" rel="noopener noreferrer" class="icon-btn" aria-label="GitHub profile">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.75 5.48.75 11.75c0 5.02 3.26 9.28 7.78 10.78.57.1.78-.25.78-.55v-2.14c-3.16.69-3.83-1.36-3.83-1.36-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.75 1.18 1.75 1.18 1.02 1.75 2.68 1.25 3.33.95.1-.74.4-1.25.72-1.54-2.52-.29-5.17-1.26-5.17-5.62 0-1.24.44-2.26 1.17-3.05-.12-.29-.51-1.45.11-3.02 0 0 .96-.31 3.15 1.16a10.9 10.9 0 0 1 5.74 0c2.19-1.47 3.15-1.16 3.15-1.16.62 1.57.23 2.73.11 3.02.73.79 1.17 1.81 1.17 3.05 0 4.37-2.66 5.33-5.19 5.61.41.35.77 1.04.77 2.1v3.11c0 .3.21.66.79.55A11.26 11.26 0 0 0 23.25 11.75C23.25 5.48 18.27.5 12 .5Z"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/rishi-garg-44633a297" target="_blank" rel="noopener noreferrer" class="icon-btn" aria-label="LinkedIn profile">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27ZM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.8 0 0 .78 0 1.75v20.5C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.75V1.75C24 .78 23.2 0 22.22 0Z"/></svg>
+      </a>
+      <button class="icon-btn theme-toggle" id="themeToggle" aria-label="Toggle light and dark theme" aria-pressed="false">
+        <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"/></svg>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<main id="main-content">
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero__inner">
+      <div class="hero__text">
+        <p class="badge reveal">
+          <span class="badge__dot" aria-hidden="true"></span>
+          Open to opportunities
+        </p>
+
+        <h1 class="hero__headline reveal">
+          Building backend systems.
+          Solving problems with code.
+        </h1>
+
+        <p class="hero__name reveal">
+          <span class="hero__name-highlight">Rishi Garg</span>
+          <span class="hero__role">Backend Developer &amp; DSA Enthusiast</span>
+        </p>
+
+        <p class="hero__desc reveal">
+          Computer Science student specializing in backend development and Data Structures &amp; Algorithms, with a strong foundation in Java, Python, SQL, REST APIs and MySQL.
+        </p>
+
+        <div class="hero__cta reveal">
+          <a href="#projects" class="btn btn--primary magnetic">Explore Projects</a>
+          <a href="assets/resume/Rishi_Garg_Resume.pdf" download class="btn btn--ghost magnetic" id="resumeBtn">Download Resume</a>
+        </div>
+
+        <div class="hero__links reveal">
+          <a href="https://github.com/rishigarg1704-ai" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <span class="dot-sep" aria-hidden="true">·</span>
+          <a href="https://www.linkedin.com/in/rishi-garg-44633a297" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <span class="dot-sep" aria-hidden="true">·</span>
+          <a href="mailto:gargrishi1704@gmail.com">Email</a>
+        </div>
+      </div>
+
+      <div class="hero__visual reveal" aria-hidden="true">
+        <div class="photo-card" id="photoCard">
+          <img src="assets/images/profile.jpg" alt="Rishi Garg" id="profilePhoto"
+               onerror="this.style.display='none'; document.getElementById('photoCard').classList.add('photo-card--empty')">
+          <span class="photo-card__note">Add photo at<br><code>assets/images/profile.jpg</code></span>
+          <span class="photo-card__badge">
+            <span class="photo-card__dot"></span>
+            Available for work
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats" aria-label="Key figures">
+    <div class="stats__inner">
+      <div class="stat reveal">
+        <span class="stat__value" data-count="99.9" data-suffix="%">0%</span>
+        <span class="stat__label">ICAT Percentile</span>
+      </div>
+      <div class="stat reveal">
+        <span class="stat__value" data-count="4670">0</span>
+        <span class="stat__label">ICAT Rank</span>
+      </div>
+      <div class="stat reveal">
+        <span class="stat__value" data-static="2027">2027</span>
+        <span class="stat__label">Graduation</span>
+      </div>
+      <div class="stat reveal">
+        <span class="stat__value" data-static="B.Tech">B.Tech</span>
+        <span class="stat__label">CSE</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="section-inner">
+      <p class="eyebrow reveal">01 — About</p>
+      <h5 class="section-title reveal">Engineering mindset.<br>Practical execution.</h2>
+
+      <p class="about__lead reveal">
+        Computer Science student specializing in backend development and Data Structures &amp; Algorithms. Strong foundation in Java, Python, and SQL, with hands-on experience in backend logic, REST APIs, MySQL, and algorithmic problem solving — interested in building practical software, writing clean code, and improving skills in backend engineering and system design.
+      </p>
+
+      <div class="pillars">
+        <article class="pillar reveal">
+          <span class="pillar__index">Backend</span>
+          <h3>Systems that hold up</h3>
+          <p>Building practical backend systems — API endpoints, database design, and CRUD logic that work the way they're meant to.</p>
+        </article>
+        <article class="pillar reveal">
+          <span class="pillar__index">DSA</span>
+          <h3>Algorithmic thinking</h3>
+          <p>Problem solving grounded in data structures and algorithms — the discipline behind every efficient system.</p>
+        </article>
+        <article class="pillar reveal">
+          <span class="pillar__index">Clean Code</span>
+          <h3>Structure by design</h3>
+          <p>OOP principles, reusable components, and structured design that keeps codebases maintainable.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills" id="skills">
+    <div class="section-inner">
+      <p class="eyebrow reveal">02 — Skills</p>
+      <h2 class="section-title reveal">Technology I build with.</h2>
+
+      <div class="skill-wall reveal" id="skillWall">
+        <div class="skill-group" data-category="Programming">
+          <h3 class="skill-group__title">Programming</h3>
+          <div class="skill-pills">
+            <span class="pill" tabindex="0" data-tooltip="Core language for backend & DSA"><i class="devicon-java-plain colored pill__icon"></i>Java</span>
+            <span class="pill" tabindex="0" data-tooltip="Scripting & data workflows"><i class="devicon-python-plain colored pill__icon"></i>Python</span>
+            <span class="pill" tabindex="0" data-tooltip="Querying & schema design"><svg class="pill__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.66 3.58 3 8 3s8-1.34 8-3V5"/><path d="M4 11v6c0 1.66 3.58 3 8 3s8-1.34 8-3v-6"/></svg>SQL</span>
+          </div>
+        </div>
+        <div class="skill-group" data-category="Core">
+          <h3 class="skill-group__title">Core</h3>
+          <div class="skill-pills">
+            <span class="pill" tabindex="0" data-tooltip="Arrays, trees, sorting, searching"><svg class="pill__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="4" r="2"/><circle cx="5" cy="14" r="2"/><circle cx="19" cy="14" r="2"/><circle cx="5" cy="20" r="1.6"/><circle cx="19" cy="20" r="1.6"/><path d="M12 6v3M12 9l-6 3M12 9l6 3M5 16v2M19 16v2"/></svg>DSA</span>
+            <span class="pill" tabindex="0" data-tooltip="Objects, classes, design patterns"><svg class="pill__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 2 3 7v10l9 5 9-5V7z"/><path d="M3 7l9 5 9-5M12 12v10"/></svg>OOP</span>
+            <span class="pill" tabindex="0" data-tooltip="Server-side logic & APIs"><svg class="pill__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="4" width="18" height="6" rx="1.5"/><rect x="3" y="14" width="18" height="6" rx="1.5"/><circle cx="7" cy="7" r=".8" fill="currentColor" stroke="none"/><circle cx="7" cy="17" r=".8" fill="currentColor" stroke="none"/></svg>Backend Development</span>
+            <span class="pill" tabindex="0" data-tooltip="Breaking problems into systems"><svg class="pill__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-4 10.5c.7.66 1 1.3 1 2.5h6c0-1.2.3-1.84 1-2.5A6 6 0 0 0 12 3Z"/></svg>Problem Solving</span>
+          </div>
+        </div>
+        <div class="skill-group" data-category="Backend">
+          <h3 class="skill-group__title">Backend &amp; Databases</h3>
+          <div class="skill-pills">
+            <span class="pill" tabindex="0" data-tooltip="Relational database design"><i class="devicon-mysql-plain colored pill__icon"></i>MySQL</span>
+            <span class="pill" tabindex="0" data-tooltip="Designing clean endpoints"><svg class="pill__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M9 3v4M15 3v4M6 7h12l-1 5H7L6 7Z"/><path d="M8 12v3a4 4 0 0 0 8 0v-3"/><path d="M9 21v-2M15 21v-2"/></svg>REST API Design</span>
+            <span class="pill" tabindex="0" data-tooltip="Query performance tuning"><svg class="pill__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 14a8 8 0 1 1 16 0"/><path d="M12 14 16 9"/><path d="M12 14v.01"/></svg>SQL Optimization</span>
+          </div>
+        </div>
+        <div class="skill-group" data-category="Tools">
+          <h3 class="skill-group__title">Tools</h3>
+          <div class="skill-pills">
+            <span class="pill" tabindex="0" data-tooltip="Version control"><i class="devicon-git-plain colored pill__icon"></i>Git</span>
+            <span class="pill" tabindex="0" data-tooltip="API testing"><i class="devicon-postman-plain colored pill__icon"></i>Postman</span>
+            <span class="pill" tabindex="0" data-tooltip="Data exploration"><i class="devicon-jupyter-plain colored pill__icon"></i>Jupyter Notebook</span>
+            <span class="pill" tabindex="0" data-tooltip="Data handling"><svg class="pill__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="1.5"/><path d="M3 9h18M3 14h18M9 4v16M15 4v16"/></svg>Excel</span>
+            <span class="pill" tabindex="0" data-tooltip="Primary editor"><i class="devicon-vscode-plain colored pill__icon"></i>VS Code</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="experience" id="experience">
+    <div class="section-inner">
+      <p class="eyebrow reveal">03 — Experience</p>
+      <h2 class="section-title reveal">Career timeline.</h2>
+
+      <div class="timeline">
+        <div class="timeline__line" aria-hidden="true"><span class="timeline__line-fill"></span></div>
+        <article class="timeline-item reveal">
+          <div class="timeline-item__dot" aria-hidden="true"></div>
+          <div class="timeline-item__year">2023</div>
+          <div class="timeline-item__card">
+            <h3>Logistics Assistant</h3>
+            <p class="timeline-item__meta">Mark Express · Jan 2023</p>
+            <ul>
+              <li>Coordinated shipment tracking and logistics operations.</li>
+              <li>Managed operational data using Excel and database systems.</li>
+              <li>Gained practical exposure to business workflows and operational efficiency.</li>
+            </ul>
+          </div>
+        </article>
+         <article class="timeline-item reveal">
+          <div class="timeline-item__dot" aria-hidden="true"></div>
+          <div class="timeline-item__year">2024</div>
+          <div class="timeline-item__card">
+            <h3>AI Intern</h3>
+            <p class="timeline-item__meta">AIMagic Technologies · 2 Months</p>
+            <ul>
+              <li>Contributed to building intelligent AI-driven solutions with a focus on real-world application.</li>
+              <li>Worked on AI model and data-related tasks under expert mentorship.</li>
+              <li>Gained hands-on exposure to practical AI development workflows.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal">
+          <div class="timeline-item__dot" aria-hidden="true"></div>
+          <div class="timeline-item__year">2025</div>
+          <div class="timeline-item__card">
+            <h3>Python &amp; Java Trainee</h3>
+            <p class="timeline-item__meta">Anedge Semiconductors Pvt. Ltd. · Jan – Feb 2025</p>
+            <ul>
+              <li>Developed programming solutions and backend logic using Java and Python.</li>
+              <li>Applied debugging and structured coding practices.</li>
+              <li>Worked through programming concepts and algorithms using hands-on exercises and tasks.</li>
+              <li>Collaborated with senior developers and participated in code reviews.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal">
+          <div class="timeline-item__dot" aria-hidden="true"></div>
+          <div class="timeline-item__year">2026</div>
+          <div class="timeline-item__card">
+            <h3> python Training</h3>
+            <p class="timeline-item__meta">CTTC Bhubaneswar. · May – july  2026</p>
+            <ul>
+              <li>Completed Practical Python programming training.</li>
+              <li>Applied debugging and structured coding practices.</li>
+              <li>Built strong foundation in programming logic and problem-solving techniques.</li>
+            </ul>
+          </div>
+        </article>
+  
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects" id="projects">
+    <div class="section-inner">
+      <p class="eyebrow reveal">04 — Projects</p>
+      <h2 class="section-title reveal">Selected work.</h2>
+
+      <div class="filters reveal" id="filters" role="group" aria-label="Filter projects by technology">
+        <button class="filter-btn is-active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="java">Java</button>
+        <button class="filter-btn" data-filter="python">Python</button>
+        <button class="filter-btn" data-filter="backend">Backend</button>
+        <button class="filter-btn" data-filter="dsa">DSA</button>
+        <button class="filter-btn" data-filter="sql">SQL</button>
+        <button class="filter-btn" data-filter="system-design">System Design</button>
+      </div>
+
+      <div class="project-list" id="projectList">
+
+        <article class="project reveal" data-tags="java sql backend">
+          <div class="project__number">01</div>
+          <div class="project__body">
+            <h3 class="project__title">Analytics Dashboard Backend Service</h3>
+            <p class="project__stack">Java · SQL · REST APIs · MySQL</p>
+            <ul class="project__features">
+              <li>KPI monitoring &amp; sales analytics</li>
+              <li>REST API endpoints</li>
+              <li>CRUD operations</li>
+              <li>Database design</li>
+              <li>OOP principles &amp; design patterns</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="project reveal" data-tags="java python sql dsa">
+          <div class="project__number">02</div>
+          <div class="project__body">
+            <h3 class="project__title">Data Processing &amp; Algorithm Optimization System</h3>
+            <p class="project__stack">Java · Python · SQL · Data Structures</p>
+            <ul class="project__features">
+              <li>Sorting &amp; searching algorithms</li>
+              <li>Tree-based algorithms</li>
+              <li>Filtering &amp; reporting features</li>
+              <li>Algorithmic complexity considered</li>
+              <li>DSA applied to real data-management problems</li>
+            </ul>
+           
+          </div>
+        </article>
+
+        <article class="project reveal" data-tags="java system-design">
+          <div class="project__number">03</div>
+          <div class="project__body">
+            <h3 class="project__title">Modular Service Architecture Design</h3>
+            <p class="project__stack">Java · System Design · OOP Principles</p>
+            <ul class="project__features">
+              <li>SOLID principles</li>
+              <li>Factory &amp; Singleton patterns</li>
+              <li>Dependency Injection</li>
+              <li>Clean, reusable components</li>
+            </ul>
+            
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- DSA -->
+  <section class="dsa">
+    <div class="section-inner">
+      <p class="eyebrow reveal">05 — Approach</p>
+      <h2 class="section-title reveal">Think in algorithms.<br>Build with engineering.</h2>
+
+      <div class="dsa__content">
+        <ol class="roadmap reveal">
+          <li><span>Arrays</span></li>
+          <li><span>Searching</span></li>
+          <li><span>Sorting</span></li>
+          <li><span>Trees</span></li>
+          <li><span>Algorithms</span></li>
+          <li><span>Optimization</span></li>
+        </ol>
+
+        <div class="dsa__platforms reveal">
+          <p>Active practice on:</p>
+          <div class="platform-badges">
+            <span class="platform-badge">LeetCode</span>
+            <span class="platform-badge">HackerRank</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="education" id="education">
+    <div class="section-inner">
+      <p class="eyebrow reveal">06 — Education</p>
+      <h2 class="section-title reveal">Academic foundation.</h2>
+
+      <div class="edu-card reveal">
+        <div class="edu-card__main">
+          <h3>Bachelor of Technology — Computer Science &amp; Engineering</h3>
+          <p class="edu-card__school">Mewar University</p>
+        </div>
+        <div class="edu-card__meta">
+          <div><span class="edu-card__label">Expected Graduation</span><span class="edu-card__value">2027</span></div>
+        </div>
+      </div>
+
+      <div class="certs reveal" aria-label="Certifications">
+        <div class="certs__track">
+          <div class="cert-card">
+            <h4>Data Science</h4>
+            <p>Code With Harry</p>
+          </div>
+          <div class="cert-card">
+            <h4>Python</h4>
+            <p>CTTC Bhubaneswar</p>
+          </div>
+          <div class="cert-card">
+            <h4>Java &amp; Python</h4>
+            <p>Anedge Semiconductors Pvt. Ltd.</p>
+          </div>
+          <div class="cert-card">
+            <h4>DSA in Java</h4>
+            <p>Active practice — LeetCode + HackerRank</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS -->
+  <section class="achievements" id="achievements">
+    <div class="section-inner">
+      <p class="eyebrow reveal">07 — Achievements</p>
+      <h2 class="section-title reveal">Beyond the codebase.</h2>
+
+      <div class="achievements__grid">
+        <div class="achievement reveal">
+          <span class="achievement__value" data-count="99.9" data-suffix="%">0%</span>
+          <span class="achievement__label">ICAT Percentile</span>
+        </div>
+        <div class="achievement reveal">
+          <span class="achievement__value" data-count="4670">0</span>
+          <span class="achievement__label">ICAT Rank</span>
+        </div>
+        <div class="achievement reveal">
+          <span class="achievement__value achievement__value--text">iDEX</span>
+          <span class="achievement__label">Innovation proposal submitted to Government of India's iDEX platform</span>
+        </div>
+        <div class="achievement reveal">
+          <span class="achievement__value achievement__value--text">State Level</span>
+          <span class="achievement__label">Athlete — represented state in competitive sports</span>
+        </div>
+        <div class="achievement reveal">
+          <span class="achievement__value achievement__value--text">College Events</span>
+          <span class="achievement__label">Hosted and organized major college events and programs</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="section-inner">
+      <h2 class="contact__headline reveal">Let's build<br>something useful.</h2>
+      <p class="contact__text reveal">Interested in backend development, software engineering, internships or technical collaboration?</p>
+
+      <div class="contact__grid">
+        <div class="contact__details reveal">
+          <a href="mailto:gargrishi1704@gmail.com" class="contact__link">
+            <span class="contact__link-label">Email</span>
+            <span class="contact__link-value">gargrishi1704@gmail.com</span>
+          </a>
+          <a href="tel:+918237870380" class="contact__link">
+            <span class="contact__link-label">Phone</span>
+            <span class="contact__link-value">+91-8237870380</span>
+          </a>
+          <a href="https://github.com/rishigarg1704-ai" target="_blank" rel="noopener noreferrer" class="contact__link">
+            <span class="contact__link-label">GitHub</span>
+            <span class="contact__link-value">github.com/rishigarg1704-ai</span>
+          </a>
+          <a href="https://www.linkedin.com/in/rishi-garg-44633a297" target="_blank" rel="noopener noreferrer" class="contact__link">
+            <span class="contact__link-label">LinkedIn</span>
+            <span class="contact__link-value">linkedin.com/in/rishi-garg-44633a297</span>
+          </a>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <p class="contact-form__note">This form validates your message in the browser. Connect a backend or email service to actually send it.</p>
+
+          <div class="field">
+            <label for="cf-name">Name</label>
+            <input type="text" id="cf-name" name="name" autocomplete="name" required>
+            <span class="field__error" id="err-name" role="alert"></span>
+          </div>
+
+          <div class="field">
+            <label for="cf-email">Email</label>
+            <input type="email" id="cf-email" name="email" autocomplete="email" required>
+            <span class="field__error" id="err-email" role="alert"></span>
+          </div>
+
+          <div class="field">
+            <label for="cf-subject">Subject</label>
+            <input type="text" id="cf-subject" name="subject" required>
+            <span class="field__error" id="err-subject" role="alert"></span>
+          </div>
+
+          <div class="field">
+            <label for="cf-message">Message</label>
+            <textarea id="cf-message" name="message" rows="4" required></textarea>
+            <span class="field__error" id="err-message" role="alert"></span>
+          </div>
+
+          <button type="submit" class="btn btn--primary magnetic">Send Message</button>
+          <p class="contact-form__status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <span class="footer__mark">RG</span>
+      <div>
+        <p class="footer__name">Rishi Garg</p>
+        <p class="footer__tag">Backend Developer · DSA Enthusiast</p>
+      </div>
+    </div>
+    <div class="footer__links">
+      <a href="https://github.com/rishigarg1704-ai" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/in/rishi-garg-44633a297" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="mailto:gargrishi1704@gmail.com">Email</a>
+    </div>
+    <p class="footer__copy">&copy; <span id="year"></span> Rishi Garg</p>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
