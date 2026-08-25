@@ -32,7 +32,7 @@ Then open `http://localhost:8000`.
 ## Things to configure before publishing
 
 1. **Resume** — drop a PDF at `assets/resume/Rishi_Garg_Resume.pdf`. The "Download Resume" button checks for the file and warns if it's missing instead of pretending to work.
-2. **Project GitHub links** — real repository URLs are not invented. Add them in `js/script.js` inside `initProjectRepoLinks()`:
+2. **Project GitHub links** — real repository URLs are not invented. Add them in `script.js` inside `initProjectRepoLinks()`:
    ```js
    const REPOS = [
      { title: 'Analytics Dashboard Backend Service', url: 'https://github.com/your-username/your-repo' },
